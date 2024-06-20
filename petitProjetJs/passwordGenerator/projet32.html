@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="projet32.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="generateur">
+        <h1>
+            Pasword Generator
+        </h1>
+        <div class="affichage">
+            <p>
+                <span id="affichePassword"></span>
+                <img src="" alt="">
+            </p>
+        </div>
+        <div class="option">
+            <p>
+                <label for="">Password Lenght</label>
+                <input id="inputNumber" type="number" max="15" min="1" value="10" step="1">
+            </p>
+            <p>
+                <label for="">Include uppercase letters</label>
+                <input id="checkUpper" type="checkbox" checked="true" >
+            </p>
+            <p>
+                <label for="">Include lowercase letters</label>
+                <input id="checkLower" type="checkbox" checked="true">
+            </p>
+            <p>
+                <label for="">Include numbers</label>
+                <input id="checkNumber" type="checkbox" checked="true">
+            </p>
+            <p>
+                <label for="">Include symbols</label>
+                <input id="checkSymbol" type="checkbox" checked="true">
+            </p>
+        </div>
+        <button id="btn">Generate Password</button>
+    </div>
+    <script src="./projet32.js"></script>
+</body>
+</html>

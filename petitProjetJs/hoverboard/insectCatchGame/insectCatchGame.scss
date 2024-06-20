@@ -1,0 +1,75 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+    width: 100vw;
+    background-color: black;
+}
+
+.nav{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 25px;
+    background-color: white;
+    color: black;
+    .score{
+        margin-right: 50px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .newScore{
+
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .record{
+      
+        margin-top: 15px;
+        margin-bottom: 15px;    }
+    .time{
+        margin-left: 50px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+.creationCercle{
+    width: 100%;
+    height: 750px;
+    margin-top: 50px;
+    position: relative;
+    background-color: black;
+    .jouer{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px 40px;
+        border-radius: 30px;
+        border: none;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .cercle{
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        border: none;
+        border-radius: 50%;
+        background-color: white;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+

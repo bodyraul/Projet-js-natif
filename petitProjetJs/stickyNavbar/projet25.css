@@ -1,0 +1,101 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    transition: 0.5s linear;
+}
+
+.nav2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    color: black;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.nav ul li{
+    padding: 25px 15px;
+    font-size: 18px;
+}
+
+.nav2 ul li{
+    padding: 13px 15px;
+    font-size: 18px;
+}
+
+nav ul li:nth-child(1){
+    color: red;
+}
+
+nav ul li:hover{
+   cursor: pointer;
+}
+
+.container-image{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://th.bing.com/th/id/R.33d02c67b4a6e90abe2d7a58f764edd8?rik=gA%2fesQP2%2f0%2b5uw&riu=http%3a%2f%2fwww.snut.fr%2fwp-content%2fuploads%2f2015%2f12%2fimage-de-nature-9.jpg&ehk=4oiNLekZZh50XowVszovQmq8w%2fH0S6GIwQYqeKknWaM%3d&risl=&pid=ImgRaw&r=0");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-image h1{
+    color: white;
+    font-size: 50px;
+}
+
+.container-image p{
+    color: white;
+    font-size: 25px;
+    padding: 10px 0;
+}
+
+.contenu-texte{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contenu-texte p{
+    font-size: 25px;
+    padding: 25px 0;
+}

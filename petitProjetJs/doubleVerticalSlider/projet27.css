@@ -1,0 +1,133 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+    position: relative;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x:hidden ;
+}
+
+.titre{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titre.titreRose{
+    background-color: #E75882;
+    transition: all 0.5s ease;
+}
+
+.titre.titreMontagne{
+    background-color: #2E70BE;
+    transform: translateY(-100%);
+    transition: all 0.5s ease;
+}
+
+.titre.titreChateau{
+    background-color:#1b1e1d ;
+    transform: translateY(-100%);
+    transition: all 0.5s ease;
+}
+
+.titre.titreAigle{
+    background-color:#BA0B00 ;
+    transform: translateY(-100%);
+    transition: all 0.5s ease;
+}
+
+.titre span{
+    text-align: center;
+    color: white;
+    padding: 5px 0;
+}
+
+.titre span:nth-child(1){
+   font-size: 30px;
+   font-weight: bolder;
+}
+
+.titre span:nth-child(2){
+    font-size: 21px;
+    font-weight: 400;
+ }
+
+.image{
+    position: absolute;
+    top: 0;
+    left: 30%;
+    width: 70vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+
+.image.imageRose{
+    transition: all 0.5s ease;
+    background-image: url("https://th.bing.com/th/id/R.f6dcb39c53e6371ba0e5432f03d53183?rik=jhjR0r9So8KFaQ&riu=http%3a%2f%2f4.bp.blogspot.com%2f-oBN-9r9NFSw%2fT_Y2EIBGAAI%2fAAAAAAAAGRM%2fBqR9gTdTsIc%2fs1600%2fb691d0c39b.jpg&ehk=jhHKy6ZE1EiqFcOID3KqYbAFfOgQZaVxWB9iaWJOk3I%3d&risl=&pid=ImgRaw&r=0");
+}
+
+.image.imageMontagne{
+    transform: translateY(100%);
+    transition: all 0.5s ease;
+    background-image: url("https://million-wallpapers.com/wallpapers/4/9/13106154638795609352.jpg");
+}
+
+.image.imageChateau{
+    transform: translateY(100%);
+    transition: all 0.5s ease;
+    background-image: url('https://th.bing.com/th/id/R.48ecbef1dbe70bbd42deab9fb5021ac0?rik=6xiMWzVT1LApLw&riu=http%3a%2f%2faudeladesmots.com%2fwp-content%2fuploads%2f2015%2f01%2fMaison_hante2.jpg&ehk=jjAFzIJEmAlqsSNUCQM9JTd18retg9byp6V3YUxD8P4%3d&risl=&pid=ImgRaw&r=0');
+}
+
+.image.imageAigle{
+    transform: translateY(100%);
+    transition: all 0.5s ease;
+    background-image: url('https://thumbs.dreamstime.com/b/aigle-au-soleil-2815716.jpg');
+}
+ 
+.btn-haut{
+    position: absolute;
+    background-color: white;
+    height: 45px;
+    width: 35px;
+    left: 30%;
+    top: 50%;
+    transform: translateY(-100%);
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15%;
+}
+
+.btn-bas{
+    position: absolute;
+    background-color: white;
+    height: 45px;
+    width: 35px;
+    left: 30%;
+    top: 50%;
+    transform: translateX(-100%);
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15%;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button:disabled{
+    display: none;
+}

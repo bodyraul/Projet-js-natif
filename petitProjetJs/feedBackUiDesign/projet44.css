@@ -1,0 +1,101 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFF8F2;
+}
+
+.container-global{
+    border-radius: 8px;
+    width: 450px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+}
+
+.introduction{
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 21px;
+    text-align: center;
+    width: 80%;
+    font-weight: bold;
+}
+
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.para-cliquable{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 33.33%;
+}
+
+.para-cliquable:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+}
+
+.para-cliquable.active{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.para-cliquable span{
+    padding: 20px 20px 20px 20px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.para-cliquable img{
+    padding: 20px 20px 0px 20px;
+}
+
+.btn{
+    color: white;
+    background-color: #2B2828;
+    padding: 10px 30px 10px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.satisfaction{
+    position: absolute;
+    width: 400px;
+    height: 200px;    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+.satisfaction p {
+    width: 70%;
+    text-align: center;
+    font-size: 17px;
+}

@@ -1,0 +1,51 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.btn{
+    position: relative;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+    padding: 20px 30px;
+    border: 1px solid black;
+   
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.boule{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    /* left: 50%;
+    top: 50%; */
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    animation: anim 0.5s ease;
+
+}
+
+@keyframes anim {
+    to{
+        transform: translate(-50%,-50%) scale(1);
+        opacity: 0;
+    }
+}
+

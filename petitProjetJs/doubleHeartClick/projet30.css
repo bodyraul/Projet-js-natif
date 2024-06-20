@@ -1,0 +1,56 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2,h1{
+    text-align: center;
+}
+
+h1{
+    margin-top: 200px;
+}
+
+h2{
+    margin-top: 10px;
+}
+
+.container-img{
+    height: 380px;
+    width: 500px;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.clique-img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.clique-img:hover{
+   cursor: pointer;
+}
+
+.like{
+    position: absolute;
+    transform: scale(400%);
+}
+
+.animation{
+    animation: anim 1s linear forwards;
+}
+
+@keyframes anim{
+    0%{opacity: 1; transform: scale(100%);}
+    100%{opacity: 0;transform: scale(600%);}
+}

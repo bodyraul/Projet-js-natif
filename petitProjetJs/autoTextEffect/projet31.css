@@ -1,0 +1,47 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #EF9370;
+}
+
+#text{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.vitesse{
+    position: absolute;
+    bottom: 10%;
+    background-color: rgba(0, 0, 0,0.1);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 7px;
+}
+
+#label{
+    padding: 4px;
+}
+
+#speed{
+    background-color: #EF9370;
+    text-align: center;
+    font-size: 15px;
+    border: none;
+}
+
+#speed:focus{
+    outline: none;
+}

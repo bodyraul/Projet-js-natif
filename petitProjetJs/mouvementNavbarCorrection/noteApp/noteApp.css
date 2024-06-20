@@ -1,0 +1,104 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #68CBF2;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+button {
+  position: absolute;
+  left: 90%;
+  top: 5%;
+  background-color: #92B65C;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.newNote {
+  width: 300px;
+  height: 500px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.newNote .entete {
+  width: 100%;
+  height: 10%;
+  background-color: #92B65C;
+  position: relative;
+}
+.newNote .entete .img1 {
+  position: absolute;
+  left: 90%;
+  width: 25px;
+  top: 23%;
+}
+.newNote .entete .img1:hover {
+  cursor: pointer;
+}
+.newNote .entete .img2 {
+  position: absolute;
+  left: 75%;
+  width: 25px;
+  top: 23%;
+}
+.newNote .entete .img2:hover {
+  cursor: pointer;
+}
+.newNote .textArea {
+  height: 90%;
+  background-color: white;
+}
+.newNote .textArea #donnees {
+  border: none;
+  outline: none;
+}
+
+.saveNote, .enrengistrer {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  height: 450px;
+  margin: 30px;
+}
+.saveNote .entete, .enrengistrer .entete {
+  width: 100%;
+  height: 10%;
+  background-color: #92B65C;
+  position: relative;
+}
+.saveNote .entete .img3, .enrengistrer .entete .img3 {
+  position: absolute;
+  left: 90%;
+  width: 25px;
+  top: 23%;
+}
+.saveNote .entete .img3:hover, .enrengistrer .entete .img3:hover {
+  cursor: pointer;
+}
+.saveNote .entete .img4, .enrengistrer .entete .img4 {
+  position: absolute;
+  left: 75%;
+  width: 25px;
+  top: 23%;
+}
+.saveNote .entete .img4:hover, .enrengistrer .entete .img4:hover {
+  cursor: pointer;
+}
+.saveNote .paraSaveNote, .enrengistrer .paraSaveNote {
+  height: 90%;
+  width: 100%;
+  background-color: white;
+  color: black;
+}/*# sourceMappingURL=noteApp.css.map */

@@ -1,0 +1,113 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+$colorbg :#2785E1;
+$colorWater :#58A7F7;
+$colorFontGrasse :#1849B5;
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: $colorbg;
+}
+
+.flexColomnCenterEvenly{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.paraBigContainer{
+    height: 700px;
+    width: 80%;
+    @extend .flexColomnCenterEvenly;
+    & p:nth-child(2){
+        color: white;
+    }
+    h1{
+        color: white;
+    }
+    .bigContainer{
+        overflow: hidden;
+        height: 600px;
+        width: 13%;
+        border: solid 1px blue;
+        text-align: center;
+        @extend .flexColomnCenterEvenly;
+        justify-content: center;
+        background-color: white;
+        border: solid 3px $colorFontGrasse;
+        border-bottom-left-radius:30px ;
+        border-bottom-right-radius: 30px;
+        position: relative;
+        .contenuBigContainer{
+            position: absolute;
+            top: 55%;
+            color: $colorFontGrasse;
+        }
+        .bigWater{
+            position: absolute;
+            transform: translateY(100%);
+            width: 100%;
+            height: 103%;
+            border-bottom-left-radius:15px ;
+            border-bottom-right-radius:15px ;
+            background-color: $colorWater;
+            transition: all 0.3s;
+        }
+    }
+}
+
+.paraSmallContainer{
+    width: 80%;
+    height: 400px;
+    @extend .flexColomnCenterEvenly;
+    p{
+        color: white;
+    }
+    div{
+        height: 70%;
+        width: 250px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .smallcontainer{
+            border: solid $colorFontGrasse 3px;
+            height: 120px;
+            width: 55px;
+            border-bottom-left-radius:15px ;
+            border-bottom-right-radius:15px ;
+            background-color: white;
+            position: relative;
+            overflow: hidden;
+            &:hover{
+                cursor: pointer;
+            }
+            @extend .flexColomnCenterEvenly;
+            .contenuSmallContainer{
+                position: absolute;
+                z-index: 5;
+                color: $colorFontGrasse;
+            }
+            .waterSmallContainer{
+                position: absolute;
+                transform: translateY(100%);
+                width: 100%;
+                height: 103%;
+                border-bottom-left-radius:15px ;
+                border-bottom-right-radius:15px ;
+                background-color: $colorWater;
+                transition: all 0.3s;
+            }
+        }
+    }
+}

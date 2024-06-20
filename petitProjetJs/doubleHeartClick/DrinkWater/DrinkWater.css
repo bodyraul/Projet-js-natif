@@ -1,0 +1,105 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #2785E1;
+}
+
+.flexColomnCenterEvenly, .paraSmallContainer div .smallcontainer, .paraSmallContainer, .paraBigContainer .bigContainer, .paraBigContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.paraBigContainer {
+  height: 700px;
+  width: 80%;
+}
+.paraBigContainer p:nth-child(2) {
+  color: white;
+}
+.paraBigContainer h1 {
+  color: white;
+}
+.paraBigContainer .bigContainer {
+  overflow: hidden;
+  height: 600px;
+  width: 13%;
+  border: solid 1px blue;
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+  border: solid 3px #1849B5;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: relative;
+}
+.paraBigContainer .bigContainer .contenuBigContainer {
+  position: absolute;
+  top: 55%;
+  color: #1849B5;
+}
+.paraBigContainer .bigContainer .bigWater {
+  position: absolute;
+  transform: translateY(100%);
+  width: 100%;
+  height: 103%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #58A7F7;
+  transition: all 0.3s;
+}
+
+.paraSmallContainer {
+  width: 80%;
+  height: 400px;
+}
+.paraSmallContainer p {
+  color: white;
+}
+.paraSmallContainer div {
+  height: 70%;
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.paraSmallContainer div .smallcontainer {
+  border: solid #1849B5 3px;
+  height: 120px;
+  width: 55px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+}
+.paraSmallContainer div .smallcontainer:hover {
+  cursor: pointer;
+}
+.paraSmallContainer div .smallcontainer .contenuSmallContainer {
+  position: absolute;
+  z-index: 5;
+  color: #1849B5;
+}
+.paraSmallContainer div .smallcontainer .waterSmallContainer {
+  position: absolute;
+  transform: translateY(100%);
+  width: 100%;
+  height: 103%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #58A7F7;
+  transition: all 0.3s;
+}/*# sourceMappingURL=DrinkWater.css.map */

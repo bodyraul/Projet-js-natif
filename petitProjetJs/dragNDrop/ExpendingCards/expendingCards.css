@@ -1,0 +1,38 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  margin-top: 50px;
+  width: 80%;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.container .bloc {
+  border: solid 1px blue;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  transition: all 1s;
+}
+.container .bloc.inactif {
+  height: 100%;
+  width: 10%;
+}
+.container .bloc.actif {
+  height: 100%;
+  width: 45%;
+}/*# sourceMappingURL=expendingCards.css.map */

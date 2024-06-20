@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+}
+.container-image{
+    width: 100vw;
+    height: 100vh;
+    background-image:url('https://img.lemde.fr/2022/10/28/280/0/5743/2871/1342/671/60/0/18451ca_1666953346740-unnamed.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 40px;
+    transform: translateX(-50%);
+}
+
+.classe-anim{
+    animation: anim 3s forwards;
+}
+
+@keyframes anim {
+    0%{-webkit-filter: blur(20px);}
+    100%{-webkit-filter: blur(0px);}
+}
+
+.disparition{
+    animation: animText 4s forwards;
+}
+
+@keyframes animText {
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+
+
+
+
+
+

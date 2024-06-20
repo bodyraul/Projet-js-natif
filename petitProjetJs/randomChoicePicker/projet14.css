@@ -1,0 +1,58 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #207BF0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduction{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+span{
+    text-align: center;
+}
+
+.container{
+    width: 500px;
+}
+
+#texte{
+    width: 100%;
+    color: black;
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#texte::placeholder{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.boutton .btn{
+    background-color: rgb(248,141,48);
+    color: white;padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    margin: 5px 1px;
+    font-size: 17px;
+}
+
+.boutton .btn:hover{
+   cursor: pointer;
+}

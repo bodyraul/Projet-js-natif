@@ -1,0 +1,60 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #F3F3F3;
+}
+
+.classFlex, .container .creerList, .container .titre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.container .titre {
+  margin-top: 100px;
+  height: 20%;
+  width: 100%;
+  color: #D7C6E9;
+  font-size: 70px;
+}
+.container .creerList {
+  margin-top: 50px;
+}
+.container .creerList .allList {
+  width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.container .creerList .allList .uneListe {
+  width: 300px;
+  height: 100px;
+  background-color: white;
+  border-top: solid 1px #CFCFCF;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  padding: 20px 25px;
+}
+.container .creerList .allList .saisir {
+  width: 300px;
+  height: 100px;
+  border: none;
+  background-color: white;
+  padding: 20px 25px;
+}
+.container .creerList .allList .saisir::-moz-placeholder {
+  color: #CFCFCF;
+  font-size: 25px;
+}
+.container .creerList .allList .saisir::placeholder {
+  color: #CFCFCF;
+  font-size: 25px;
+}/*# sourceMappingURL=todoList.css.map */

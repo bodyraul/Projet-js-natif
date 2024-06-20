@@ -1,0 +1,75 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+$colorPrincipale : #2788D6;
+$colorBarreGrise : #DCDCDE;
+
+.container{
+    height: 200px;
+    width: 600px;
+    margin-top: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    .barre{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+        .barreGrise{
+            position: absolute;
+            width: 100%;
+            height: 5px;
+            background-color: $colorBarreGrise;
+            z-index: -5;
+        }
+        .barreBleu{
+            position: absolute;
+            width: 0%;
+            height: 5px;
+            background-color: $colorPrincipale;
+            z-index: -4;
+            transition: all 0.5s;
+        }
+        .cercle{
+            border: solid 3px $colorBarreGrise;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            padding-top: 4px;
+            background-color: white;
+            transition: all 0.5s ;
+        }
+        .cercle.actif{
+            border: solid 3px $colorPrincipale;
+        }
+    }
+    .boutton{
+        button{
+            border: none;
+            background-color: $colorPrincipale;
+            padding: 10px 20px;
+            color: white;
+            margin: 10px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+}

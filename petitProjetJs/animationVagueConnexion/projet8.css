@@ -1,0 +1,136 @@
+body{
+    margin: 0px;
+}
+
+.containerGlobal{
+    background-color: #3874AC;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container-connexion{
+    width: 300px;
+    height: 400px;
+    background-color: #224567;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+button{
+    background-color: #A1CEE2;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+}
+
+button:hover{cursor: pointer;}
+
+input{
+    background-color: #224567;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: white;
+    transform: translateY(-150%);
+}
+
+input:focus{
+   
+    outline: 0;
+}
+
+.mail,.password{
+    display: flex;
+    flex-direction: row;
+}
+
+.mail p:nth-last-child(5){
+    transition: transform 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.mail p:nth-last-child(4){
+    transition: transform 0.4s  cubic-bezier(0.68,-0.55,0.265,1.55);
+    transition-delay: 50ms;
+}
+.mail p:nth-last-child(3){
+    transition: transform  0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+    transition-delay: 100ms;
+}
+.mail p:nth-last-child(2){
+    transition: transform 0.4s  cubic-bezier(0.68,-0.55,0.265,1.55);
+    transition-delay: 150ms;
+}
+
+.mail p:nth-last-child(1){
+    transition: transform 0.4s  cubic-bezier(0.68,-0.55,0.265,1.55);
+    transition-delay: 200ms;
+}
+.password p:nth-last-child(8){
+    transition: transform 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.password p:nth-last-child(7){
+    transition: transform 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+    transition-delay: 0.1s;
+}
+
+.password p:nth-last-child(6){
+    transition: transform 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+    transition-delay: 0.2s;
+}
+
+.password p:nth-last-child(5){
+    transition: transform 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+    transition-delay: 0.3s;
+}
+.password p:nth-last-child(4){
+    transition: transform 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+    transition-delay: 0.4s;
+}
+.password p:nth-last-child(3){
+    transition: transform 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+    transition-delay: 0.5s;
+}
+.password p:nth-last-child(2){
+    transition: transform 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+    transition-delay: 0.6s;
+}
+
+.password p:nth-last-child(1){
+    transition: transform 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+    transition-delay: 0.7s;
+}
+
+
+.anim{
+    transform: translateY(-150%);
+}
+
+.lettreMail.anim{
+    opacity: 0.5;
+}
+
+.lettrePassword.anim{
+    opacity: 0.5;
+}
+
+#register{
+    color: #A1CEE2;
+}
+
+#register:hover{
+    cursor: pointer;
+}

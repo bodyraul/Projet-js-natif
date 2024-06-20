@@ -1,0 +1,155 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnLight{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 80px;
+    border: 1px solid white;
+}
+
+.btnLight:hover{
+    cursor: pointer;
+}
+
+.horloge{
+    width: 400px;
+    height: 400px;
+    border: 5px solid black;
+    margin-top: 50px;
+    position: relative;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.milieu{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius:30px;
+    left:49.5%;
+    top:51%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 5;
+    background-color: black;
+}
+
+.secondes{
+    width: 50%;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    left: 49.2%;
+    top: 50.5%;
+    transform:  translateY(-50%) ;
+    transform-origin: left;
+    transition: rotate 0.4s linear;
+    z-index: 3;
+} 
+
+  .minutes{
+    width: 40%;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    left: 49.5%;
+    top: 50.5%;
+    transform:  translateY(-50%) ;
+    transform-origin: left;
+    transition: rotate 0.4s linear;
+    z-index: 2;
+} 
+
+ .heures{
+    width: 20%;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top: 50.5%;
+    transform:  translateY(-50%) ;
+    transform-origin: left;
+    transition: rotate 0.4s linear;
+    z-index: 1;
+}
+
+.affichage-heure{
+    width: 250px;
+    height: 60px;
+    border: solid 1px black;
+    margin-top: 50px;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.affichage-jour{
+    width: 300px;
+    height: 100px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.unite-minute, .unite-seconde,.dizaine-seconde, .dizaine-minute, .unite-heure, .dizaine-heure{
+    display: inline-block;
+    transition: transform 0.1s ease;
+    color: black;
+}
+
+.animation{
+    animation: anim 5s forwards ease  infinite;
+}
+
+@keyframes anim {
+     0%{transform: translateY(0%);}
+    50%{transform: translateY(150%);}
+    100%{transform: translateY(0%);}
+} 
+
+.couleur-blanc-noir{
+    background-color: black;
+}
+
+.couleur-noir-blanc{
+    background-color: white;
+}
+
+.couleur-borwn-grey{
+    background-color: white;
+}
+
+.couleurs-noir-blanc{
+    color: white;
+}
+
+.couleur-brown-blanc{
+    background-color: white;
+}
+
+
+.border-brown-blanc{
+    border: 5px solid white;
+}
+
+.border-noir-blanc{
+    border: solid 1px white;
+}
+
