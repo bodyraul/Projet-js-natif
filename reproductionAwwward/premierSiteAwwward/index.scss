@@ -191,8 +191,8 @@ nav{
   border-radius: 8px;
   letter-spacing: 1px;
   line-height: 30px;
-  -webkit-transition: all 0.8s cubic-bezier(0.17, 0.54, 0.27, 0.79);
-  transition: all 0.8s cubic-bezier(0.17, 0.54, 0.27, 0.79);
+  -webkit-transition: transform 0.8s cubic-bezier(0.17, 0.54, 0.27, 0.79);
+  transition: transform 0.8s cubic-bezier(0.17, 0.54, 0.27, 0.79);
   
 }
 
@@ -419,3 +419,150 @@ nav{
 
 
 
+// responsive premiere page
+@media screen and (max-width: 1700px) {
+  #star{
+    top: 170px;
+    left: 90%;
+ }
+
+ #div-logo{
+  top: 80px;
+  left: 5%;
+    
+  } 
+
+  .information-gradient{
+    top: 100%;
+  }
+
+  .clover{
+    top:70%;
+  }
+
+  .text-radial-gradient{
+    top: 25%;
+    
+  }
+}
+
+
+@media screen and (max-width: 1205px) {
+
+  .information-gradient{
+    left: 20%;
+  }
+
+  .clover{
+    top:85%;
+  }
+
+  .text-radial-gradient{
+    top: 40%;
+    
+     .font-special{
+      font-size: 50px;
+      line-height: 70px;
+    }
+    .font-basique{
+      font-size: 60px;
+      line-height: 70px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+
+  .information-gradient{
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .information-gradient{
+    left: 2%;
+    width: 80vw;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 691px) {
+  #star{
+    left: 80%;
+ }
+
+  .text-radial-gradient{
+    line-height: 10px;
+     .font-special{
+      font-size: 30px;
+      line-height: 50px;
+    }
+    .font-basique{
+      font-size: 30px;
+      line-height: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 422px) {
+  
+
+  .text-radial-gradient{
+    
+     .font-special{
+      font-size: 25px;
+      line-height: 45px;
+    }
+    .font-basique{
+      font-size: 25px;
+      line-height: 45px;
+    }
+  }
+}
+
+
+
+// responsive deuxieme page 
+
+@media screen and (max-width: 1100px) {
+  
+  .titre-souligne, .titre-souligne-cache{
+    font-size: 60px;
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+  
+  .titre-souligne, .titre-souligne-cache{
+    font-size: 40px;
+  }
+
+  .support-btn-anim{
+    width: 270px;
+  }
+
+  .support-btn{
+    .support-btn-introduction{
+      font-size: 25px;
+    }
+  }
+
+  .information-deuxieme-container{
+    width: 350px;
+    top: -500%;
+    left: -350%;
+  }
+}
+
+
+@media screen and (max-width: 456px) {
+  
+  .information-deuxieme-container{
+    width: 300px;
+    top: -500%;
+    left: -300%;
+  }
+}

@@ -4,7 +4,7 @@
 .quatrieme-container{
     background-color: #E7C7AC;
     width: 100vw;
-    height: 2800px;
+    height: 1600px;
     padding-top: 200px;
     font-family: 'Abril Fatface', cursive;
 }
@@ -112,127 +112,13 @@
 }
 
 .container-deux-principale-page-quatre{
-    width: 1200px;
-    height: 650px;
-    border: solid black 3px;
     margin: 0 auto;
     margin-top: 300px;
     border-radius: 30px;
     position: relative;
-    .cache-on-top{
-        position: absolute;
-        width: 100%;
-        height: 60px;
-        background-color: #E7C7AC;
-        top: -2%;
-        left: 0%;
-    }
-    .cache-on-right{
-        position: absolute;
-        width: 80px;
-        height: 97%;
-        background-color: #E7C7AC;
-        right:-1%;
-        top: 2%;
-    }
-    .cache-on-bottom{
-        position: absolute;
-        width: 100%;
-        height: 60px;
-        background-color: #E7C7AC;
-        right:0%;
-        bottom:-2%;
-    }
-    .cache-on-left{
-        position: absolute;
-        width: 100px;
-        height: 95%;
-        background-color: #E7C7AC;
-        left:-5.6%;
-        top: 3%;
-    }
 }
 
-.container-clone-page-quatre{
-    transform: translateY(-2%) translateX(-2%);
-    position: relative;
-    height: 103%;
-    width: 103%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .all-container-clone-p-quatre{
-        width: 90%;
-        height: 85%;
-        display: flex;
-        justify-content: space-between;
-        .premiere-partie-clone-p-quatre{
-            width: 49%;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: space-between;
-            .contenu-premiere-partie-clone-p-quatre h1{
-                font-size: 60px;
-                color: #162C29;
-            }
-            .contenu-premiere-partie-clone-p-quatre p{
-                font-size: 20px;
-                color: rgba($color: #162C29, $alpha: 0.8);
-                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                line-height: 30px;
-                margin-top: 20px;
-            }
-            .boutton-premiere-partie-clone-p-quatre button{
-                background-color:#CC6D51 ;
-                color: white;
-                border: none;
-                padding: 10px 70px;
-                font-size: 16px;
-                border-radius: 30px;
-                transition: all 0.2s ease;
-            }
-            .boutton-premiere-partie-clone-p-quatre button:hover{
-                background-color: #b19085;
-                cursor: pointer;
-            }
-        }
-        .deuxieme-partie-clone-p-quatre{
-            width: 49%;
-            .image-deuxieme-partie-clone-p-quatre{
-                margin-top: 50px;
-                & img:nth-child(1){
-                width: 300px;
-                }
-                & img:nth-child(2){
-                    width: 200px;
-                  
-                }
-            }
-            .titre-deuxieme-partie-clone-p-quatre{
-                display: flex;
-                justify-content:flex-end;
-                width: 100%;
-                transform: translateX(20%);
-                h1{
-                    font-size: 60px;
-                    margin-left: 40px;
-                }
-                img{
-                    transform: translateY(-32px);
-                }
-            }
-            .texte-deuxieme-partie-clone-p-quatre{
-                font-size: 20px;
-                color: rgba($color: #162C29, $alpha: 0.8);
-                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                line-height: 30px;
-                margin-top: 30px;
-            }
-        }
-    }
-}
+
 
 .animationTopElementCache{
     animation: animTopElementCache 0.2s forwards linear;
@@ -272,3 +158,97 @@
 }
 
 
+@media screen and (max-width:1274px) {
+    .container-titre-page-4{
+        width: 400px;
+        #titre-page-4{
+            font-size: 55px;
+        }
+    }
+    
+    .trait-page-4{
+        height: 100px;
+    }
+
+    .container-principale1-page-4{
+        width: 90%;
+        .top-container-principale1-p4{
+            .titre-top-container-principale1-p4{
+                font-size: 60px;
+            }
+            .texte-top-container-principale1-p4{
+                font-size: 15px;
+                padding: 35px 10px;
+            }
+        }
+        .bottom-container-principale1-p4{
+            align-items: center;
+            video{
+                width: 93%;
+            }
+        }
+    }
+  }
+
+
+  @media screen and (max-width:1061px) {
+    .container-principale1-page-4{
+        .top-container-principale1-p4{
+            height: 30%;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            .titre-top-container-principale1-p4{
+                height: 40%;
+                width: 90%;
+                font-size: 40px;
+            }
+            .texte-top-container-principale1-p4{
+                height: 70%;
+                width: 90%;
+            }
+        }
+    }
+  }
+
+
+    @media screen and (max-width:610px) {
+    .container-principale1-page-4{
+        .top-container-principale1-p4{
+            height: 50%;
+        }
+        .bottom-container-principale1-p4{
+            height: 50%;
+        }
+    }
+  }
+
+
+  @media screen and (max-width:452px) {
+    .container-titre-page-4{
+        width: 250px;
+        #titre-page-4{
+            font-size: 35px;
+        }
+    }
+
+    .container-principale1-page-4{
+        height: 1000px;
+        .top-container-principale1-p4{
+            height: 65%;
+            .titre-top-container-principale1-p4{
+                font-size: 35px;
+                width: 100%;
+                padding: 80px 0px;
+            }
+            .texte-top-container-principale1-p4{
+                font-size: 13px;
+                padding: 0px 10px;
+            }
+        }
+        .bottom-container-principale1-p4{
+            height: 35%;
+        }
+    }
+  }
