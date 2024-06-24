@@ -116,7 +116,7 @@ nav ul .une-ligne li {
 .text-radial-gradient {
   width: 100%;
   position: absolute;
-  top: -8%;
+  top: 10%;
   left: 0%;
   text-align: center;
   line-height: 90px;
@@ -162,7 +162,7 @@ nav ul .une-ligne li {
 
 .clover {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 80%;
   transform: scale(0.8) rotate(24deg);
   transition: 0.2s linear;
@@ -178,7 +178,7 @@ nav ul .une-ligne li {
   height: 200px;
   background-color: #E7C7AC;
   position: absolute;
-  top: 55%;
+  top: 65%;
   left: 30%;
   transform: rotate(15deg) translateY(-900px);
   padding: 20px;
@@ -562,6 +562,9 @@ nav ul .une-ligne li {
   }
 }
 @media screen and (max-width: 456px) {
+  .deuxieme-container {
+    height: 1200px;
+  }
   .information-deuxieme-container {
     width: 300px;
     top: -500%;

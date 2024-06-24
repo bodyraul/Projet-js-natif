@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
 
+@mixin compatibilite ($contenu){
+    -webkit-animation: $contenu;
+    -moz-animation: $contenu;
+    -ms-animation: $contenu;
+    -o-animation: $contenu;
+    animation: $contenu;
+}
+
 .troisieme-container{
     height: 1900px;
     width: 100vw;
@@ -109,10 +117,8 @@
 
 
 
-
-
 .animSousDiv{
- animation: animSousDiv 0.5s forwards  ease-in-out;
+    @include compatibilite(animSousDiv 0.5s forwards  ease-in-out);
 }
 
 @keyframes animSousDiv {
@@ -121,7 +127,7 @@
 }
 
 .animBarreTroisiemeContainer{
-    animation: animBarreTroisiemeContainer 0.7s forwards ease-in-out;
+    @include compatibilite(animBarreTroisiemeContainer 0.7s forwards ease-in-out);
 }
 
 @keyframes animBarreTroisiemeContainer {
@@ -130,7 +136,7 @@
 }
 
 .animBarreTroisiemeContainerDeux{
-    animation: animBarreTroisiemeContainerDeux 0.5s forwards ease-in-out;
+    @include compatibilite(animBarreTroisiemeContainerDeux 0.5s forwards ease-in-out);
 }
 
 @keyframes animBarreTroisiemeContainerDeux {
@@ -275,7 +281,6 @@
   @media screen and (max-width:510px) {
 
     .troisieme-container{
-
         .container-globale{
    
             .entete-troisieme-container{
@@ -307,13 +312,14 @@
 
                     }
                     & p:nth-child(2){
-                        font-size: 15px;
+                        font-size: 18px;
                     }
     
                     & p:nth-child(3){
-                        font-size: 12px;
+                        font-size: 13px;
                         letter-spacing: 1px;
                         line-height: 28px;
+                        font-weight: lighter;
                     }
                 }
             }
